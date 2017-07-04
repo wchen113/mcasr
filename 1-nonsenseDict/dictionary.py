@@ -57,7 +57,7 @@ f = open('dict_subwords_final.txt', 'r')
 doc=f.read()
 cdo=doc.split('\n')
 f.close()
-f = open('new_dict_grapheme1.txt', 'w')
+f = open('new_dict_grapheme.txt', 'w')
 for sam in cdo:
     if(sam!=''):
         ki=0
@@ -80,22 +80,22 @@ f.close()
 
 
 #assign probability to each pronunciation
-f = open('new_dict_grapheme1.txt', 'r')
+f = open('new_dict_grapheme.txt', 'r')
 cdl=f.read()
 cdo=cdl.split('\n')
 f.close()
-f = open('new_dict_prob1.txt', 'w')
+f = open('new_dict_prob.txt', 'w')
 for co in cdo:
     x=co.split(' ')
     print(x[0],np.exp(-len(x)+1),co[len(x[0])+1:len(co)],file=f)
 
 #normalized probability for each grapheme pronunciation
 
-f = open('new_dict_prob1.txt', 'r')
+f = open('new_dict_prob.txt', 'r')
 cdl=f.read()
 cpo=cdl.split('\n')
 f.close()
-f = open('normal_dict_prob1.txt', 'w')
+f = open('normal_dict_prob.txt', 'w')
 ba=cpo[0].split(' ')
 rec=ba[0]
 tot=0
@@ -130,11 +130,11 @@ f.close()
 
 #grapheme to phone
 
-f = open('new_dict_grapheme1.txt', 'r')
+f = open('new_dict_grapheme.txt', 'r')
 cdl=f.read()
 cdo=cdl.split('\n')
 f.close()
-f = open('dict_word_phone1.txt', 'w')
+f = open('dict_word_phone.txt', 'w')
 for co in cdo:
     x=co.split(' ')
     sofar=x[0]
