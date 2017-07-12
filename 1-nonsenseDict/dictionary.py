@@ -2,7 +2,7 @@
 # input: subword list (dict_subwords_final.txt)
 # output: normalized dict grapheme with prob (normal_dict_prob.txt), dict of word to phone (dict_word_phone.txt)
 # created and edited by Wenda Chen
-# data uploaded to server ifp-48/home/wchen113/upwork/dict
+# data uploaded to server ifp-48.ifp.uiuc.edu at /home/wchen113/upwork/dict
 
 import numpy as np
 
