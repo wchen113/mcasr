@@ -1,10 +1,8 @@
 # usage of the file:
 # input: subword list (dict_subwords_final.txt)
 # output: normalized dict grapheme with prob (normal_dict_prob.txt), dict of word to phone (dict_word_phone.txt)
-# please be informed:
 # created and edited by Wenda Chen
-# code upload to github, data uploaded to server
-# make the code file-runable to make phone dict in server
+# data uploaded to server ifp-48/home/wchen113/upwork/dict
 
 import numpy as np
 
